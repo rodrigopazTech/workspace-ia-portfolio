@@ -1,11 +1,14 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig, Plugin } from 'vite';
 import dotenv from 'dotenv';
 import { handleApiRequest } from './src/server/api';
 
 dotenv.config();
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const apiPlugin = (): Plugin => ({
   name: 'api-server-middleware',
