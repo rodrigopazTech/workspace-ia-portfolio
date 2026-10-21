@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#60a5fa" />
+    </marker>
+  </defs>
+
+  <rect width="1000" height="480" rx="16" fill="url(#archBg)"/>
+
+  <!-- Title -->
+  <text x="500" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">
+    Arquitectura de Sistema • Workspace Copilot
+  </text>
+  <text x="500" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">
+    Delegación de Credenciales Cliente • Orquestación Gemini Flash • Integración con 9 APIs de Google
+  </text>
+
+  <!-- Node 1: Client Browser -->
+  <g transform="translate(60, 110)" filter="url(#shadow)">
+    <rect width="240" height="310" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="240" height="40" rx="16" fill="#2563eb"/>
+    <text x="120" y="25" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1. Cliente Web (React + TS)</text>
+    
+    <g transform="translate(16, 55)" font-family="sans-serif" font-size="11" fill="#cbd5e1">
+      <text x="0" y="16" font-weight="700" fill="#93c5fd">Google Identity / OAuth</text>
+      <text x="0" y="34">• Flujo OAuth 2.0 PKCE</text>
+      <text x="0" y="52">• Scopes Google Workspace</text>
+      <text x="0" y="70">• Bearer Token en Memoria</text>
+
+      <text x="0" y="105" font-weight="700" fill="#93c5fd">UI &amp; Human Confirmation</text>
+      <text x="0" y="123">• @Mentions contextuales</text>
+      <text x="0" y="141">• Chat Multimodal + Visión</text>
+      <text x="0" y="159">• Tarjetas Interactivas</text>
+      <text x="0" y="177">• Dashboard CRUD visual</text>
+
+      <text x="0" y="212" font-weight="700" fill="#4ade80">Seguridad Zero-Retention</text>
+      <text x="0" y="230">• Sin tokens guardados en DB</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 300 230 L 380 230" stroke="#60a5fa" stroke-width="2.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+  <text x="340" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#93c5fd" text-anchor="middle">Bearer Header</text>
+  <text x="340" y="250" font-family="sans-serif" font-size="9" fill="#64748b" text-anchor="middle">POST /api/chat</text>
+
+  <!-- Node 2: Backend Orchestrator -->
+  <g transform="translate(390, 110)" filter="url(#shadow)">
+    <rect width="240" height="310" rx="16" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="240" height="40" rx="16" fill="#7c3aed"/>
+    <text x="120" y="25" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2. Backend Orquestador</text>
+
+    <g transform="translate(16, 55)" font-family="sans-serif" font-size="11" fill="#cbd5e1">
+      <text x="0" y="16" font-weight="700" fill="#c084fc">Gemini 2.5 Flash SDK</text>
+      <text x="0" y="34">• Procesamiento semántico</text>
+      <text x="0" y="52">• Function Calling Loop (x5)</text>
+      <text x="0" y="70">• Análisis de documentos</text>
+
+      <text x="0" y="105" font-weight="700" fill="#c084fc">Workspace Tool Router</text>
+      <text x="0" y="123">• searchEmails, searchFiles</text>
+      <text x="0" y="141">• prepareCalendarEvent</text>
+      <text x="0" y="159">• prepareEmailDraft</text>
+      <text x="0" y="177">• executeWorkspaceTool</text>
+
+      <text x="0" y="212" font-weight="700" fill="#f87171">Filtro de Relevancia</text>
+      <text x="0" y="230">• Tarjetas enriquecidas</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 630 230 L 710 230" stroke="#60a5fa" stroke-width="2.5" stroke-dasharray="4,4" marker-end="url(#arrow)"/>
+  <text x="670" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#93c5fd" text-anchor="middle">REST APIs</text>
+  <text x="670" y="250" font-family="sans-serif" font-size="9" fill="#64748b" text-anchor="middle">OAuth 2.0</text>
+
+  <!-- Node 3: Google Workspace APIs Cloud -->
+  <g transform="translate(720, 110)" filter="url(#shadow)">
+    <rect width="220" height="310" rx="16" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="220" height="40" rx="16" fill="#059669"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3. Google Workspace</text>
+
+    <g transform="translate(16, 52)" font-family="sans-serif" font-size="11" fill="#cbd5e1">
+      <g transform="translate(0, 0)">
+        <text x="0" y="16" font-size="13">📅 Google Calendar API</text>
+        <text x="0" y="38" font-size="13">✉️ Gmail REST API</text>
+        <text x="0" y="60" font-size="13">📁 Google Drive API v3</text>
+        <text x="0" y="82" font-size="13">📝 Google Docs API</text>
+        <text x="0" y="104" font-size="13">📊 Google Sheets API</text>
+        <text x="0" y="126" font-size="13">📽️ Google Slides API</text>
+        <text x="0" y="148" font-size="13">☑️ Google Tasks API</text>
+        <text x="0" y="170" font-size="13">👥 People API (Contacts)</text>
+        <text x="0" y="192" font-size="13">💡 Google Keep Service</text>
+      </g>
+      
+      <rect y="210" width="188" height="30" rx="6" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(52, 211, 153, 0.4)"/>
+      <text x="94" y="229" font-size="10" font-weight="700" fill="#6ee7b7" text-anchor="middle">Oficial Google Cloud APIs</text>
+    </g>
+  </g>
+
+  <!-- Bottom Privacy Legend -->
+  <g transform="translate(100, 442)">
+    <text x="400" y="16" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">
+      🔒 Cumplimiento estricto con Google API Services User Data Policy • Requisitos de Uso Limitado (Limited Use)
+    </text>
+  </g>
+</svg>

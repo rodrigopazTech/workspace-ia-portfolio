@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | Workspace Copilot - Gestión Unificada con IA</title>
+  <meta name="description" content="Política de Privacidad y Cumplimiento de la Política de Datos de Usuario de los Servicios de la API de Google para Workspace Copilot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: var(--slate-700);
+      line-height: 1.65;
+      padding: 0;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--slate-200);
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--slate-900);
+      text-decoration: none;
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .nav-links a {
+      color: #64748b;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-left: 1.25rem;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--primary);
+    }
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid var(--slate-200);
+      padding: 2.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    .badge-google {
+      display: inline-block;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .meta-date {
+      font-size: 0.875rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--slate-100);
+      padding-bottom: 1rem;
+    }
+    .callout {
+      background: #eff6ff;
+      border: 1px solid #93c5fd;
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+      color: #1e3a8a;
+    }
+    .callout-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .callout p {
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .callout a {
+      color: #1d4ed8;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin: 2rem 0 0.75rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.935rem;
+    }
+    ul {
+      margin: 0.75rem 0 1.25rem 1.5rem;
+      font-size: 0.935rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    strong {
+      color: var(--slate-900);
+    }
+    .contact-box {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    footer {
+      border-top: 1px solid var(--slate-200);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: #94a3b8;
+      background: #ffffff;
+    }
+    @media (max-width: 640px) {
+      .card {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="brand">
+        <span class="brand-badge">⚡</span>
+        <span>Workspace Copilot</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/" class="home-link">Inicio</a>
+        <a href="/privacy.html" class="active">Privacidad</a>
+        <a href="/terms.html">Términos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <span class="badge-google">Cumplimiento Oficial • Google API Services User Data Policy</span>
+      <h1>Política de Privacidad de Workspace Copilot</h1>
+      <div class="meta-date">
+        <strong>Última actualización:</strong> Octubre de 2026 • <strong>Titular Responsable:</strong> Rodrigo Cristóbal Paz Jiménez (<a href="mailto:contactorodrigopaz@gmail.com" style="color: #2563eb;">contactorodrigopaz@gmail.com</a>)
+      </div>
+
+      <!-- Google Limited Use Callout -->
+      <div class="callout">
+        <div class="callout-title">
+          🛡️ Declaración Obligatoria de Uso Limitado de Google (Limited Use Disclosure)
+        </div>
+        <p>
+          El uso y la transferencia que <strong>Workspace Copilot</strong> realice a cualquier otra aplicación de la información recibida a través de las APIs de Google se apegará estrictamente a la 
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">
+            Política de Datos de Usuario de los Servicios de la API de Google
+          </a>, incluidos los <strong>Requisitos de Uso Limitado (Limited Use Requirements)</strong>.
+        </p>
+        <p style="margin-top: 0.75rem; font-weight: 600; color: #065f46;">
+          ✓ Ningún dato personal o de Google Workspace del usuario es utilizado para entrenar, reentrenar o mejorar modelos de inteligencia artificial generalistas de terceros.
+        </p>
+      </div>
+
+      <h2>1. Compromiso de Privacidad y Alcance</h2>
+      <p>
+        En <strong>Workspace Copilot</strong> ("nosotros", "la aplicación"), respetamos profundamente la confidencialidad de tu información personal y corporativa. Esta política rige la forma en que accedemos, procesamos y protegemos los datos de tu cuenta cuando conectas tus herramientas de Google Workspace (Google Calendar, Gmail, Google Drive, Docs, Sheets, Slides, Tasks, Google Contacts y Google Keep).
+      </p>
+
+      <h2>2. Datos Accedidos y Permisos Solicitados (OAuth Scopes)</h2>
+      <p>
+        La aplicación solicita únicamente los permisos indispensables para ejecutar las instrucciones directas del usuario en tiempo real bajo su consentimiento explícito:
+      </p>
+      <ul>
+        <li><strong>Identidad y Perfil Básico (Firebase Auth / Google Profile):</strong> Nombre, foto y dirección de correo electrónico para autenticarte y personalizar la sesión.</li>
+        <li><strong>Google Calendar (<code>calendar</code>):</strong> Para consultar eventos cruzados en todos tus calendarios, verificar disponibilidad horaria y preparar propuestas de reprogramación o eventos grupales con enlace de Google Meet.</li>
+        <li><strong>Gmail (<code>gmail.modify</code>, <code>gmail.compose</code>, <code>gmail.readonly</code>):</strong> Para buscar hilos, resumir correos no leídos y preparar borradores interactivos que solo se envían tras tu confirmación expresa en la interfaz.</li>
+        <li><strong>Google Drive (<code>drive</code>):</strong> Para listar archivos, explorar carpetas, buscar documentos referenciados y preparar acciones de renombrado o eliminación.</li>
+        <li><strong>Google Docs, Sheets y Slides (<code>documents</code>, <code>spreadsheets</code>, <code>presentations</code>):</strong> Para analizar el contenido textual o tabular que pides consultar y generar nuevos recursos de trabajo.</li>
+        <li><strong>Google Tasks (<code>tasks</code>):</strong> Para sincronizar tus listas de tareas y pendientes del día.</li>
+        <li><strong>Google Contacts (People API - <code>contacts</code>):</strong> Para consultar tu libreta de direcciones, obtener correos/teléfonos de colegas y permitirte crear o editar contactos.</li>
+      </ul>
+
+      <h2>3. Almacenamiento, Retención y Seguridad de Datos</h2>
+      <p>
+        <strong>No almacenamos copias de tus correos, archivos ni eventos en bases de datos externas permanentes.</strong> Las consultas se ejecutan en tiempo real bajo demanda y en memoria (in-memory) utilizando el token de sesión emitido por Google OAuth.
+      </p>
+      <p>
+        Toda la comunicación entre tu navegador, nuestro servidor y las APIs oficiales de Google se encuentra estrictamente cifrada bajo protocolos <strong>TLS 1.3 / HTTPS de 256 bits</strong>.
+      </p>
+
+      <h2>4. Procesamiento con Inteligencia Artificial (Google Gemini)</h2>
+      <p>
+        Para responder a tus preguntas en lenguaje natural y estructurar planes de trabajo, la aplicación transmite únicamente los extractos relevantes del contexto solicitado a la API empresarial de Google Gemini (Google Gen AI SDK).
+      </p>
+      <ul>
+        <li>Tus datos <strong>NO</strong> se utilizan para entrenar modelos fundacionales.</li>
+        <li>Tus conversaciones y archivos permanecen aislados a tu sesión de usuario.</li>
+        <li>Ninguna información es comercializada, compartida con anunciantes ni transferida a brokers de datos.</li>
+      </ul>
+
+      <h2>5. Control, Revocación y Eliminación de Acceso</h2>
+      <p>
+        Tú mantienes en todo momento el control soberano sobre tus datos. Puedes revocar el acceso de Workspace Copilot de manera inmediata en cualquier instante visitando:
+      </p>
+      <p>
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color: #2563eb; font-weight: 600; text-decoration: underline;">
+          Configuración de Seguridad de Google • Aplicaciones de Terceros con Acceso a tu Cuenta →
+        </a>
+      </p>
+      <p>
+        Asimismo, puedes solicitar el borrado de cualquier registro de cuenta escribiendo a nuestro correo oficial:
+      </p>
+      <div class="contact-box">
+        ✉️ <strong>Contacto Oficial:</strong> <a href="mailto:contactorodrigopaz@gmail.com" style="color: #2563eb; font-weight: 600;">contactorodrigopaz@gmail.com</a><br>
+        👤 <strong>Responsable del Proyecto:</strong> Rodrigo Cristóbal Paz Jiménez
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Workspace Copilot • Gestión Unificada con IA. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

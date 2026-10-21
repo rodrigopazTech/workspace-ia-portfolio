@@ -1,0 +1,8 @@
+{
+  "name": "Remix Workspace AI Copilot",
+  "description": "Conversational AI assistant to consult and analyze your Google Workspace apps including Gmail, Google Calendar, Google Drive, and Google Tasks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
